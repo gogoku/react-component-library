@@ -1,11 +1,12 @@
 {
   "name": "react-component-library",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "babel-plugin-react-intl": "^7.5.2",
     "classnames": "^2.2.6",
     "plotly.js-basic-dist": "^1.53.0",
     "react": "^16.13.1",
@@ -24,7 +25,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "publish:npm": "rm -rf dist && mkdir dist &&  ./node_modules/.bin/babel src -d dist --copy-files"
   },
   "eslintConfig": {
     "extends": "react-app"
