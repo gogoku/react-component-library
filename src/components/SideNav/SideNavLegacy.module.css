@@ -1,0 +1,202 @@
+.container {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-bottom: calc(20px);
+    padding-top: 24px;
+    -webkit-transition: background-color 0.3s cubic-bezier(0.2, 0, 0, 1),
+      color 0.3s cubic-bezier(0.2, 0, 0, 1);
+    transition: background-color 0.3s cubic-bezier(0.2, 0, 0, 1),
+      color 0.3s cubic-bezier(0.2, 0, 0, 1);
+    width: 200px;
+    height: calc(100vh - 0px);
+    background-color: #36454f;
+    color: #deebff;
+    fill: #0747a6;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .menuContainer {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 16px;
+  }
+  
+  .linksContainer {
+    width: 100%;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-bottom: 16px;
+  }
+  
+  .linkItem {
+    position: relative;
+    display: flex;
+    height: 36px;
+    width: 36px;
+    justify-content: center;
+    align-items: center;
+    text-rendering: auto;
+    color: #ffffff;
+    letter-spacing: inherit;
+    word-spacing: inherit;
+    text-transform: none;
+    text-indent: inherit;
+    text-shadow: inherit;
+    text-align: inherit;
+    background-color: #0747a6;
+    box-sizing: border-box;
+    font: inherit;
+    font-size: 20px;
+    padding: 0;
+    border: none;
+  }
+  
+  .linkItem:hover {
+    border-radius: 50%;
+    background-color: #063986;
+  }
+  .linkItem:focus {
+    border-radius: 50%;
+    background-color: #063986;
+    outline: none;
+  }
+  
+  .settingsContainer {
+  }
+  
+  .logo {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    font-size: 40px;
+    font-weight: bold;
+    width: 56px;
+    height: 56px;
+    overflow: hidden;
+  }
+  
+  .logo a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .logo a:active {
+    color: #ffffff;
+  }
+  
+  .logo img{
+    width: 32px;
+    height: 32px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 8px;
+  }
+  
+  .childContainer {
+    position: absolute;
+    background-color: #eeeeee;
+    border-radius: 8px;
+    color: #000000;
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(222, 222, 222, 1);
+    -moz-box-shadow: 1px 1px 2px 0px rgba(222, 222, 222, 1);
+    box-shadow: 1px 1px 2px 0px rgba(222, 222, 222, 1);
+    width: 200px;
+    min-height: 75px;
+    z-index: -100;
+    opacity: 0;
+  }
+  
+  .childContainer_top {
+    left: 55px;
+    bottom: 2px;
+  }
+  
+  .childContainer_bottom {
+    left: 55px;
+    top: 2px;
+  }
+  
+  .linkItem:focus .childContainer {
+    z-index: 10;
+    opacity: 1;
+  }
+  
+  .userBadge_active {
+    position: relative;
+  }
+  
+  .userBadge_active .childContainer {
+    z-index: 10;
+    opacity: 1;
+  }
+  
+  .parentTitle {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .childTitle {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    padding: 4px 8px;
+    text-decoration: none;
+    color: #000000;
+    cursor: default;
+  }
+  
+  .childTitle:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .childIconStyle {
+    padding-top: 2px;
+    padding-right: 8px;
+    font-size: 16px;
+  }
+  

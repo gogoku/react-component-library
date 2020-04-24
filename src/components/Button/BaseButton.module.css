@@ -1,0 +1,181 @@
+.buttonBase {
+  -webkit-box-align: baseline;
+  align-items: baseline;
+  box-sizing: border-box;
+  display: inline-flex;
+  font-size: inherit;
+  font-style: normal;
+  font-weight: normal;
+  max-width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  height: 2.28571em;
+  line-height: 2.28571em;
+  vertical-align: middle;
+  width: auto;
+  border-width: 0px;
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 0px 8px;
+  transition: background 0.1s ease-out 0s,
+    box-shadow 0.15s cubic-bezier(0.47, 0.03, 0.49, 1.38) 0s;
+  outline: none !important;
+}
+
+.buttonBase.small {
+  font-size: 12px;
+}
+
+.buttonBase:disabled {
+  cursor: not-allowed;
+  background: rgba(9, 30, 66, 0.02) !important;
+}
+
+.default {
+  background: rgba(9, 30, 66, 0.04);
+}
+
+.default:hover {
+  background: rgba(9, 30, 66, 0.08);
+}
+
+.default:active {
+  background: rgba(9, 30, 66, 0.1);
+}
+
+.primary {
+  background: rgb(30, 136, 229);
+  color: rgb(255, 255, 255) !important;
+}
+
+.primary:hover {
+  background: rgb(21, 101, 192);
+}
+
+.primary:active {
+  background: rgb(13, 71, 161);
+}
+
+.warning {
+  background: rgb(245, 176, 65);
+  color: rgb(255, 255, 255) !important;
+}
+
+.warning:hover {
+  background: rgb(243, 156, 18);
+}
+
+.warning:active {
+  background: rgb(230, 126, 34);
+}
+
+.danger {
+  background: rgb(236, 112, 99);
+  color: rgb(255, 255, 255) !important;
+}
+
+.danger:hover {
+  background: rgb(231, 76, 60);
+}
+
+.danger:active {
+  background: rgb(203, 67, 53);
+}
+
+.success {
+  background-color: #28a745;
+  color: #ffffff;
+}
+
+.success:hover {
+  background-color: #23b043;
+}
+
+.success:active {
+  background-color: #0f8a2b;
+}
+
+/* Loader styles */
+.lds-spinner {
+  color: official;
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-spinner div {
+  transform-origin: 40px 40px;
+  animation: lds-spinner 1.2s linear infinite;
+}
+.lds-spinner div:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 37px;
+  width: 6px;
+  height: 18px;
+  border-radius: 20%;
+  background: #fff;
+}
+.lds-spinner div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -1.1s;
+}
+.lds-spinner div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -1s;
+}
+.lds-spinner div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.9s;
+}
+.lds-spinner div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.8s;
+}
+.lds-spinner div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.7s;
+}
+.lds-spinner div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.6s;
+}
+.lds-spinner div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.5s;
+}
+.lds-spinner div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.4s;
+}
+.lds-spinner div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.3s;
+}
+.lds-spinner div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.2s;
+}
+.lds-spinner div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.1s;
+}
+.lds-spinner div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+}
+@keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.lds-spinner:disabled {
+  visibility: hidden;
+}

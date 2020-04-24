@@ -1,0 +1,108 @@
+.Card {
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 7px 14px 0 rgba(60, 66, 87, 0.1),
+    0 3px 6px 0 rgba(0, 0, 0, 0.07);
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+@media screen and (min-width: 1920px) {
+  .title {
+    font-size: 14px;
+  }
+}
+
+.titleText {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 12px;
+  color: #686565;
+  letter-spacing: 0.2px;
+}
+
+.small {
+  width: 18%;
+}
+
+.medium {
+  width: 21%;
+}
+
+.large {
+  width: 25%;
+}
+
+.full {
+  width: 100%;
+}
+
+.cardContent {
+  padding: 16px;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: center;
+  padding: 4px 0;
+  font-size: 12px;
+  align-items: center;
+  cursor: default;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.cardFooter:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.footerdefault {
+  border-top: 1px solid #dcdcdc;
+  background-color: #ffffff;
+}
+
+.footerdefault:hover {
+  background-color: #fafafa;
+}
+
+.footerprimary {
+  border-top: 1px solid rgb(30, 136, 229);
+}
+
+.footerwarning {
+  border-top: 1px solid rgb(245, 176, 65);
+}
+
+.footerdanger {
+  border-top: 1px solid rgb(236, 112, 99);
+}
+
+.footersuccess {
+  border-top: 1px solid #28a745;
+}
+
+.primary {
+  background: rgb(30, 136, 229);
+  color: rgb(255, 255, 255) !important;
+}
+
+.warning {
+  background: rgb(245, 176, 65);
+  color: rgb(255, 255, 255) !important;
+}
+
+.danger {
+  background: rgb(236, 112, 99);
+  color: rgb(255, 255, 255) !important;
+}
+
+.success {
+  background: #28a745;
+  color: rgb(255, 255, 255) !important;
+}

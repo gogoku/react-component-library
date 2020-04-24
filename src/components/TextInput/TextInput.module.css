@@ -1,0 +1,46 @@
+.txtInput {
+  height: auto;
+  /* padding: 10px; */
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  overflow-y: overlay;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.txtInput:focus {
+  border: 1px solid rgb(52, 152, 219);
+  box-shadow: inset 0 1px 1px rgba(52, 152, 219 0.075);
+}
+
+.txtInput:invalid {
+  border: 1px solid rgb(231, 76, 60) !important;
+  box-shadow: inset 0 1px 1px rgba(107, 75, 75, 0.075) !important;
+}
+
+.error {
+  border: 1px solid rgb(231, 76, 60) !important;
+  box-shadow: inset 0 1px 1px rgba(107, 75, 75, 0.075) !important;
+}
+
+.txtInput:disabled {
+  background-color: #ebebeb;
+  cursor: not-allowed;
+}
+
+.small {
+  width: 20%;
+}
+
+.medium {
+  width: 40%;
+}
+.large {
+  width: 60%;
+}
+
+.full {
+  width: 100%;
+}
