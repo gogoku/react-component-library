@@ -79,7 +79,7 @@ BaseButton.propTypes = {
   buttonType: PropTypes.oneOf(['button', 'submit', 'reset']),
   appearance: PropTypes.oneOf([
     'default',
-    'primary',
+    'info',
     'warning',
     'danger',
     'success',
@@ -102,4 +102,6 @@ BaseButton.defaultProps = {
   appearance: 'default',
   className: '',
   size: 'medium',
+  onFocus: () => {},
+  onBlur: () => {},
 };

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 import { Button } from '../index';
 import PropGenerator from '../../PropGenerator';
+import UiToImage from '../../UiToImage';
 
 const defaultValueJson = {
   btnText: 'Sample Button',
@@ -26,9 +27,10 @@ function ButtonClass() {
       name: 'Appearance',
       options: [
         { label: 'default', value: 'default' },
-        { label: 'primary', value: 'primary' },
+        { label: 'info', value: 'info' },
         { label: 'danger', value: 'danger' },
         { label: 'warning', value: 'warning' },
+        { label: 'success', value: 'success' },
       ],
     },
     {
@@ -40,14 +42,12 @@ function ButtonClass() {
 
   return (
     <>
-      <div>
-        <Button
-          title={valueJson.btnText}
-          testId="testbutton"
-          appearance={valueJson.btnAppearance.value}
-          disabled={valueJson.btnDisabled}
-        ></Button>
-      </div>
+      <Button
+        title={valueJson.btnText}
+        testId="testbutton"
+        appearance={valueJson.btnAppearance.value}
+        disabled={valueJson.btnDisabled}
+      ></Button>
       <br></br>
       <div>
         <PropGenerator

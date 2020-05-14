@@ -7,7 +7,7 @@ export default function CardBase(props) {
 
   return (
     <div
-      className={`${Cardstyles.Card} ${Cardstyles[size]} ${Cardstyles[type]}`}
+      className={`${Cardstyles.Card} ${Cardstyles[size]} ${Cardstyles[type]} ${className}`}
     >
       <div>{children}</div>
     </div>
@@ -22,6 +22,6 @@ CardBase.propTypes = {
 };
 
 CardBase.defaultProps = {
-  size: 'small',
+  size: 'default',
   type: 'default',
 };

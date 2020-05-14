@@ -6,6 +6,7 @@
 .pnp.js
 /.yarn
 /flow-typed
+/storybook-static
 
 # testing
 /coverage

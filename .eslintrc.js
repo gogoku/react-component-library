@@ -20,7 +20,7 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  plugins: ['prettier', 'redux-saga', 'react', 'react-hooks', 'jsx-a11y', 'flowtype'],
+  plugins: ['prettier', 'react', 'react-hooks', 'jsx-a11y', 'flowtype'],
   rules: {
     'prettier/prettier': ['error', {
       "printWidth": 80,
@@ -82,8 +82,6 @@ module.exports = {
     'react/require-extension': 0,
     'react/self-closing-comp': 0,
     'react/sort-comp': 0,
-    'redux-saga/no-yield-in-race': 2,
-    'redux-saga/yield-effects': 2,
     'require-yield': 0,
   }
 };

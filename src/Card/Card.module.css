@@ -44,6 +44,10 @@
   width: 100%;
 }
 
+.default {
+  width: fit-content;
+}
+
 .cardContent {
   padding: 16px;
 }
@@ -87,7 +91,7 @@
   border-top: 1px solid #28a745;
 }
 
-.primary {
+.info {
   background: rgb(30, 136, 229);
   color: rgb(255, 255, 255) !important;
 }

@@ -27,7 +27,7 @@ const propJson = [
     name: 'Appearance',
     options: [
       { label: 'default', value: 'default' },
-      { label: 'primary', value: 'primary' },
+      { label: 'info', value: 'info' },
       { label: 'danger', value: 'danger' },
       { label: 'warning', value: 'warning' },
       { label: 'success', value: 'success' },

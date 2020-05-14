@@ -44,16 +44,16 @@
   background: rgba(9, 30, 66, 0.1);
 }
 
-.primary {
+.info {
   background: rgb(30, 136, 229);
   color: rgb(255, 255, 255) !important;
 }
 
-.primary:hover {
+.info:hover {
   background: rgb(21, 101, 192);
 }
 
-.primary:active {
+.info:active {
   background: rgb(13, 71, 161);
 }
 

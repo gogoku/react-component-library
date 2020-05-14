@@ -3,6 +3,7 @@ import { PropTypes } from 'prop-types';
 import { FaInfoCircle } from 'react-icons/fa';
 import CardBase from './CardBase';
 import Cardstyles from './Card.module.css';
+import UiToImage from '../UiToImage';
 
 export default function CardNew(props) {
   const { children, size, type } = props;
@@ -27,5 +28,5 @@ CardNew.propTypes = {
 };
 
 CardNew.defaultProps = {
-  type: 'primary',
+  type: 'info',
 };
